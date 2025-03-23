@@ -2,7 +2,7 @@ const express = require('express')
 
 const jwt =require('jsonwebtoken')
 
-
+const port = process.env.PORT || 4000;
 
 
 const app = express()
@@ -18,8 +18,8 @@ const users=[
 const initializeDbAndServer = async () => {
   
 
-    app.listen(5000, () =>
-      console.log('Server Running at http://localhost:5000/'),
+    app.listen(port, () =>
+      console.log('Server Running at http://localhost:4000/'),
     )
 }
 

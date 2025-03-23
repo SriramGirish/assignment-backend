@@ -25,6 +25,11 @@ const initializeDbAndServer = async () => {
 
 initializeDbAndServer()
 
+app.get('/',async (request,response) =>{
+  response.send("ok")
+}
+)
+
 
 app.post('/login', async (request, response) => {
   const {username, password} = request.body

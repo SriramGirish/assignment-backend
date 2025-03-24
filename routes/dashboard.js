@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
   if (!token) {
     return res.status(401).json({ message: 'User not logged in' });
   }
-  // Mock dashboard data
+ 
   res.json({ cards: [{ id: 1, title: 'Card 1' }, { id: 2, title: 'Card 2' }] });
 });
 

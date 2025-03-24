@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
   if (!token) {
     return res.status(401).json({ message: 'User not logged in' });
   }
-  // Mock map data
+
   res.json({ center: [20.5937, 78.9629], zoom: 5 });
 });
 
